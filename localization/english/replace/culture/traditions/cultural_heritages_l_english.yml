@@ -121,13 +121,3 @@
 
  heritage_vlach_name:0 "Rumîn"
  heritage_vlach_collective_noun:0 "Rumîni"
- 
- # Dead heritages #TODO localize
- heritage_gothic_name: "Gothic"
- heritage_gothic_collective_noun: "Goths"
- heritage_egyptian_name: "Egyptian"
- heritage_egyptian_collective_noun: "Egyptians"
- heritage_hunnic_name: "Hunnic"
- heritage_hunnic_collective_noun: "Huns"
- heritage_ancient_greek_name: "Hellenic"
- heritage_ancient_greek_collective_noun: "Hellenic"
