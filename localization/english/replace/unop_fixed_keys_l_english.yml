@@ -1,0 +1,184 @@
+﻿#Unoffical Patch removed "al-Muzaffar" fix
+l_english:
+
+ learning_theology.3054.b:0 "It is my [ROOT.Char.Custom2('RelationToMeShort', family_actor)|U]’s time to shine!"
+ learning_theology.3054.c:0 "My [ROOT.Char.Custom2('RelationToMeShort', random_actor)|U] is a natural charmer."
+ learning_theology.3054.b.tt:0 "[family_actor.GetName] will attempt to outperform [passion_playwright.GetName] in a duel using [family_actor.GetHerHis] [diplomacy_skill]."
+ learning_theology.3054.c.tt:0 "[random_actor.GetName] will attempt to outperform [passion_playwright.GetName] in a duel using [random_actor.GetHerHis] [diplomacy_skill]."
+ learning_theology.3055.desc.victory.hired_actor:0 "To my delight, [lead_actor.GetSheHe] delivers a performance worthy not only of my writings, but of [ROOT.Char.GetFaith.HighGodName] [ROOT.Char.GetFaith.HighGodHerselfHimself]!"
+ fund_inspiration.2080.a:0 ""[rival.GetFirstNameNoTooltip] #EMP will#! ensure its quality, [inspiration_owner.GetFirstNameNoTooltip].""
+ fund_inspiration.2080.b:0 ""Stick to your own duties, [rival.GetFirstNameNoTooltip].""
+ fund_inspiration.2080.success:0 "[rival.GetFirstNameNoTooltip] improves [inspiration_owner.GetFirstNamePossessiveNoTooltip] work"
+ fund_inspiration.2080.failure:0 "[rival.GetFirstNameNoTooltip] stifles [inspiration_owner.GetFirstNameNoTooltip]"
+ bp1_yearly.9020.desc.hof:0 "what it would be like to lay with the [ROOT.Char.GetFaith.ReligiousHeadName]? All that time, the [ROOT.Char.GetFaith.ReligiousHeadName]'s fingers spend sifting over the holy books, why imagine how it must feel! Be my [ROOT.Char.GetFaith.ReligiousHeadName] and make me your [ROOT.Char.GetFaith.ReligiousText]!""
+ task_foreign_affairs_fallback_effect_desc:0 "\n\nFellow Vassal Opinion: #P +[SCOPE.ScriptValue('chancellor_foreign_affairs_realm_opinion_scale')|1]#!"
+ murder_save.1014.desc:0 "One evening as I am preparing for bed, I hear two of my servants talking in hushed voices. It takes me a moment to realize they are speaking in [owner.GetCulture.GetLanguage.GetNameNoTooltip] rather than [ROOT.Char.GetCulture.GetLanguage.GetNameNoTooltip]. They clearly don't realize I can understand them.\n\n"Wait for [ROOT.Char.GetHerHim] to fall asleep. Then you keep watch while I slit [ROOT.Char.GetHerHis] throat".\n\nI swiftly exit my quarters to inform my guards that there are assassins in my room. Thank [ROOT.Char.GetFaith.HighGodName] I speak [owner.GetCulture.GetLanguage.GetNameNoTooltip]!"
+ bp1_yearly.9019.b:0 "Silence, [bp1_yearly_9019_spouse.Custom('InsultNoun')]! I shall lay with [bp1_yearly_9019_lover.GetHerHim] alone!"
+ CHANGE_FERVOR_GLOBAL:1 "[FAITH.GetName|V]'s [fervor|E] increases by $VALUE|+0$"
+ CHANGE_FERVOR_GLOBAL_NEG:1 "[FAITH.GetName|V]'s [fervor|E] decreases by $VALUE|-0$"
+ CHANGE_FERVOR_GLOBAL_PAST:1 "[FAITH.GetName|V]'s [fervor|E] increased by $VALUE|+0$"
+ CHANGE_FERVOR_GLOBAL_PAST_NEG:1 "[FAITH.GetName|V]'s [fervor|E] decreased by $VALUE|-0$"
+ DESTROY_TITLE_GLOBAL:0 "[TARGET_TITLE.GetName|U] is destroyed"
+ DESTROY_TITLE_GLOBAL_PAST:0 "[TARGET_TITLE.GetName|U] was destroyed"
+ COPY_TITLE_HISTORY_EFFECT:0 "[TITLE.GetName] copy title history from [TARGET_TITLE.GetName]"
+ COPY_TITLE_HISTORY_PAST_EFFECT:0 "[TITLE.GetName] copied title history from [TARGET_TITLE.GetName]"
+#Fix the # before improved (does not render this word)
+ travel_events.0060.notification.b:0 "Knight Significantly Improved: [selected_knight.GetShortUIName]"
+# Fix extra )
+ ACTIVITY_PLANNER_PHASE_REPLACE_TOOLTIP:0 "#T [ActivityPhase.GetName]#![AddLine( ActivityPhase.CanPickDescriptionBlockers( GetPlayer, PlannedActivityPhase.GetLocation, ActivityPlanner.GetSelectedSpecialOption ) )][AddTextIf( Not( ActivityPlanner.CanPlanMorePhasesOfType( ActivityPhase.Self ) ), AddLine( '$ACTIVITY_PLANNER_CANNOT_PICK_MORE_OF_PHASE$' ) )][AddLine( ActivityPhase.GetDescription )]"
+ contest_planner_contest_tooltip:0 "#T [ActivityPhase.GetName]#![AddLine( ActivityPhase.CanPickDescriptionBlockers( GetPlayer, ActivityPlanner.GetSingleLocationPhase.GetLocation, ActivityPlanner.GetSelectedSpecialOption ) )][AddTextIf( Not( ActivityPlanner.CanPlanMorePhasesOfType( ActivityPhase.Self ) ), AddLine( '$ACTIVITY_PLANNER_CANNOT_PICK_MORE_OF_PHASE$' ) )][AddLine( ActivityPhase.GetDescription )]"
+ contest_planner_contest_selected_tooltip:0 "#T [ActivityPhase.GetName]#![AddLine( ActivityPhase.CanPickDescriptionBlockers( GetPlayer, ActivityPlanner.GetSingleLocationPhase.GetLocation, ActivityPlanner.GetSelectedSpecialOption ) )][AddLine( ActivityPhase.GetDescription )]"
+ secrets.0008.desc:1 "[secret_exposer.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has revealed that I am seeing [Select_CString( ObjectsEqual( secret_exposer, target ), target.GetHerHim, target.GetTitledFirstName )] in secret! With the truth spreading like wildfire, our passion may not have been as hidden as we would like to believe."
+ intrigue_dread.2401.b:0 "Execution attendance is mandatory!"
+ hunt_lover_gift_key_title:0 "$hunt.8001.t$"
+ I_AM_DIARCHY_SUCCESSOR:0 "I am in a [line_of_succession|E] to [sharing_power|E] with my [liege|E]"
+ NOT_I_AM_DIARCHY_SUCCESSOR:0 "I am not in a [line_of_succession|E] to [sharing_power|E] with my [liege|E]"
+ THEY_ARE_DIARCHY_SUCCESSOR:0 "[CHARACTER.GetShortUIName] is in a [line_of_succession|E] to [sharing_power|E] with [CHARACTER.GetHerHis] [liege|E]"
+ NOT_THEY_ARE_DIARCHY_SUCCESSOR:0 "[CHARACTER.GetShortUIName] is not in a [line_of_succession|E] to [sharing_power|E] with [CHARACTER.GetHerHis] [liege|E]"
+ ep2_locale_events_artifact_motto_desc:0 "[my_weapon.GetDesc]\n\nAlong the blade it reads [my_weapon.GetOwner.GetHouse.GetMotto]."
+ tour_grounds_events.3016.desc:0 "I at last manage to find myself alone in the wilds of [touring_grounds_scope.GetNameNoTooltip] and my mind wanders to thoughts of [liege_lover_scope.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\nI cannot deny that [touring_grounds_scope.GetNameNoTooltip] is a place of true beauty, almost beautiful enough to match my beloved [liege_lover_scope.GetNameNoTooltip]. I feel compelled to leave a mark here so all who pass through [touring_grounds_scope.GetNameNoTooltip] will know my love for [liege_lover_scope.GetHerHim]. Perhaps carving [liege_lover_scope.GetHerHis] name into a [touring_grounds_scope.GetProvince.Custom('get_carvable_surface')]!"
+ tour_grounds_events.3017.desc:0 "I at last catch up with my [visiting_liege.GetTitleAsNameNoTooltip|U] and, to my horror, I find [visiting_liege.GetHerHim] carving [visiting_liege.GetHerHis] name into a [touring_grounds_scope.GetProvince.Custom('get_carvable_surface')].\n\nNo doubt, [visiting_liege.GetSheHe] had no way of knowing that this particular [touring_grounds_scope.GetProvince.Custom('get_carvable_surface')] is of great spiritual significance to the locals, and if they found out that their [visiting_liege.GetTitleAsNameNoTooltip|U] vandalized such a holy place, they would curse the name [visiting_liege.GetName] for generations to come!"
+ gruesome_festival_sacrifice_human_sacrifice.magnificent.opinion:1 "[opinion|E] and [county_opinion|E] gain with [GetPlayer.GetFaith.GetAdherentNamePlural] will be as high as it can be"
+ gruesome_festival_immediate_log_title:0 "[GetPlayer.Custom('GruesomeFestivalName')|U] Completed"
+ gruesome_festival_faithful_faith_option_log_title:0 "Faith"
+ gruesome_festival_faithful_nobility_option_log_title:0 "Nobility"
+ gruesome_festival_faithful_commoners_option_log_title:0 "Commoners"
+ contest_events.5500.desc:0 "The silence is deafening: [versus_contestant.GetTitledFirstName] has been contemplating [versus_contestant.GetHerHis] next move for what seems an aeon, eyes gazing intently at the [activity.Custom('ContestBoardGameType')] board beneath knitted brows.\n\nClearly, the [versus_contestant.GetWomanMan] wants to win.\n\nOnce the idea of distracting [versus_contestant.GetHerHim] pops into my head, it is hard to dispel..."
+ nick_the_anointed_desc:1 "Peasants whisper that [CHARACTER.GetFaith.HighGodName] chose [CHARACTER.GetShortUINameNoTooltipNoFormat] to do [CHARACTER.GetFaith.HighGodHerHis] work in the mortal world."
+ BETROTHAL_BOTH_CHARACTERS:3 "Propose that [CHARACTER.GetUIName] and [TARGET_CHARACTER.GetUIName] get [betrothed|E], since both are [children|E]"
+ christian_saint_bone_description:1 "The reputed remains of a [saint_bone_owner.GetFaith.GetReligion.GetAdjectiveNoTooltip] saint, acquired by [saint_bone_owner.GetNameNoTooltip] while undertaking [saint_bone_owner.GetHerHis] pilgrimage to [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip], and revered as a token of luck and piety by [saint_bone_owner.GetFaith.GetAdherentNamePluralNoTooltip]."
+ hunt.9001.woo_potential:1 "I caught [ROOT.Char.GetIntentTarget.GetFirstName] attention, but more work is required if I am to win [ROOT.Char.GetIntentTarget.GetHerHis] heart...\n\n"
+ intent_woo_success_tt:1 "You seduced [THIS.Char.GetIntentTarget.GetShortUIName], object of your $woo_attendee_intent$ [intent|E]"
+ intent_woo_potential_tt:1 "You piqued the interest of [THIS.Char.GetIntentTarget.GetShortUIName], object of your $woo_attendee_intent$ [intent|E]"
+ intent_woo_fail_tt:1 "You failed to seduce [THIS.Char.GetIntentTarget.GetShortUIName], object of your $woo_attendee_intent$ [intent|E]"
+ hunt_woo_success_key:0 "[CHARACTER.GetShortUIName|U] succeeded in seducing [TARGET_CHARACTER.GetShortUIName]"
+ hunt_woo_failure_key:0 "[CHARACTER.GetShortUIName|U] failed to seduce [TARGET_CHARACTER.GetShortUIName]"
+ hunt.1003.c:0 "[pertinent.GetFirstNameNoTooltip], the shot is yours."
+ bp1_house_feud.0501.desc:0 "\n\nHa, to think [other_house_feud_story.Custom('GetFamilyFeudShortFlavor')] has actually raised some hackles."
+ house_feud_starts_flavor_tt:0 "Started because [other_house_feud_story.Custom('GetFamilyFeudShortFlavor')]""
+ designate_diarch_interaction:0 "Designate as Diarch"
+ manhunt_skull_cup_desc:0 "This skull cup is a trophy from the successful manhunt of [new_skull_cup.MakeScope.Var('skull_origin').Char.GetUIName] at the [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l]."
+ picked_up_throne_desc:0 "I successfully heaved a heavy piece of furniture aloft, despite [impressed_friend.GetFirstNamePossessive] doubts"
+ picked_up_throne_desc_second_perspective:0 "you successfully heaved a heavy piece of furniture aloft, despite [impressed_friend.GetFirstNamePossessive] doubts"
+ picked_up_throne_desc_third_perspective:0 "[owner.GetName] successfully heaved a heavy piece of furniture aloft, despite [impressed_friend.GetFirstNamePossessive] doubts"
+ spouse.3002.b:0 "I cannot go behind my [ROOT.Char.Custom2('RelationToMePossessive' , SCOPE.sC('spouse') )] back like this."
+ pilgrimage.7000.a:0 "[ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTierNoTooltip], it has been an honor."
+ force_duel_criminals_interaction.punishment_failed.loser.t:0 "You failed to punish [SCOPE.sC('sc_victor').GetUIName]"
+ rival_blotter_declined:0 "[CHARACTER.GetShortUIName|U] declined [TARGET_CHARACTER.GetShortUINamePossessive] invitation to a blot."
+ rival_blotter_declined_corresponding:0 "[TARGET_CHARACTER.GetShortUIName|U] declined [CHARACTER.GetShortUINamePossessive] invitation to a blot."
+ PLEDGE_DEFENDER_EFFECT:0 "[TARGET_CHARACTER.GetShortUIName] will be pledged as a defender"
+ PLEDGE_DEFENDER_PAST_EFFECT:0 "[TARGET_CHARACTER.GetShortUIName] is pledged as a defender"
+ activity_system.0300.desc.intro.traveling:0 "The blaring of war horns have reached me even here in [ROOT.Char.GetCurrentLocation.GetNameNoTooltip] as I am en route to attend my [target_activity_type.GetNameNoTooltip] in [target_activity_location.GetName]. "
+ activity_system.0310.desc.intro:0 "The blaring of the war horns have reached me here in [target_activity_location.GetName] as I am attending [target_activity_host.GetTitledFirstNamePossessive|U] [target_activity_type.GetNameNoTooltip]. I have been summoned to aid in the war between [attacker.GetTitledFirstName|U] and [defender.GetTitledFirstName|U]."
+ activity_system.0400.desc_leader:0 "When [travel_leader.Custom2('MyCharacterIntroduction', ROOT.Char)] approaches me with a mixture of shame and worry written all over [travel_leader.GetHerHis] face, I know [travel_leader.GetSheHe] bears bad news.\n\n"I am sorry to report that we are running behind schedule by about [SCOPE.GetValue('unop_days_late')|0], my [ROOT.Char.GetTitleAsNameNoTooltip], and we might not make it to destination in time.""
+ activity_system.0400.desc_no_leader:0 "I keep evaluating the sky and all the maps I own, but it's clear that the math doesn't check out.\n\nWe are running behind schedule by about [SCOPE.GetValue('unop_days_late')|0] and, if we keep moving at the current speed along the current itinerary, we won't make it to the destination in time."
+ culture_parameter_wetlands_hunt_success_chance:0 "Increased [hunt_success_chance|E] in [GetTerrain( 'wetlands' ).GetName] and [GetTerrain( 'floodplains' ).GetName]"
+ game_concept_inspiration_desc:2 "Inspired [characters|E] are skilled artisans with a [project|E] that could come true if you become their [sponsor|E].\n\nYou can use the Commission Artifact [decision|E] to hire such a Character, in order to create an [artifact|E].[SelectLocalization( HasDlcFeature( 'royal_court' ), 'game_concept_inspiration_desc_DLC', '' )]\n\nWhen their Project is complete, the Sponsor gets to keep the result, normally an Artifact."
+
+ #Clothes Fix
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ep2_western_war_nob_01_com:0 "Knight's Mail Coif"
+
+#### NOT FIXED BUT MUST KEEP AN EYE AT THEM
+
+# Empty text
+# hunt.7303.pity:0 "$hunt.7303.reply$, ."
+
+# Can be attached to a bow (a bow have no blade)
+# ep2_locale_events_artifact_sharp_desc:0 "[my_weapon.GetDesc]\n\nThe blade has been sharpened for the tourney."
+# ep2_locale_events_artifact_prayer_desc:0 "[my_weapon.GetDesc]\n\nA prayer has been carved down the blade."
+# artifact_tournament_sharpened_blade_modifier:0 "Sharpened Blade"
+
+# Potentially fixed ?
+# hunt.7303.reply:0 "[befriend_target.GetTitledFirstName] seems to have much in common with me"
+# activity_pulse_action_local_baron_tax:0 "[first.GetNameNoTooltip] Coerced into Paying Tax"
+# playdate.3013.desc:0 "We are playing in the forest when I suddenly find myself all alone; I could have sworn the others were just behind me!\n\nJust as I'm about to start screaming – so that they can find me, not because I'm #EMP scared#! – I stumble across [witch.Custom2('MyCharacterIntroduction', ROOT.Char)] dressed in a black cloak. [witch.GetSheHe|U] is crouched on the ground inspecting some weird looking plant, comparing it to one depicted in a big black tome open on the ground beside [witch.GetHerHim].\n\n"Hello my young [ROOT.Char.GetLadyLord]. Has the calling of knowledge led you out here to me?""
+# witchcraft_book_description:0 "A book once belonging to the Witch of [ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTier]. Its pages are filled with easy herbal remedies made to balance the humors."
+# immaculate_witchy_bones_description:0 "A pile of bones once belonging to the Witch of [ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTier]. Even after [witch_scope.GetHerHis] burning, the bones remain immaculate."
+# apa_sight_seeing_group_title:0 "[first.GetShortUIName|U] and [second.GetShortUIName|U] Made an Excursion from [province.GetNameNoTooltip] to Nearby Sights"
+# host_dinner_events.1008.desc.mid.dead_positive_relation_memory:0 "[stop_host_scope.GetNameNoTooltip] appears dressed as my beloved [dead_relation.GetName].\n\n"Woe, I pass on to [dead_relation.GetFaith.PositiveAfterLife|U]. I think only of [visiting_liege.GetNameNoTooltip] and all the wonderful times we had together."\n\nA heartfelt tragic performance recreating the time [memory_performance_scope.GetDescription]."
+# ep2_wedding.9015.tt:0 "[current_char.GetUIName|U] received a refund for the canceled [GetActivityType('activity_wedding').GetName] of [gold_i][THIS.Var('gwedding_gold_recoup_value').GetValue|V0]"
+# duke_feudal_independent_male_iranian_group:0 "$king_feudal_male_iranian_group$"
+# duke_feudal_independent_female_iranian_group:0 "$king_feudal_female_iranian_group$"
+# duchy_feudal_independent_iranian_group:0 "$kingdom_feudal_iranian_group$"
+
+
+ #famed_parent_became_very_famous_desc: "My [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became [GetPrestigeLevelName(ROOT.Var('parent_fame_lvl').GetValue|0)]"
+ #famed_parent_became_very_famous_desc_second_perspective: "your [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became [GetPrestigeLevelName( '(int32)ROOT.Var(parent_fame_lvl)' )]"
+ #famed_parent_became_very_famous_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [famed_parent.GetMotherFather], [ famed_parent.GetFirstNameNoTooltip], became [GetPrestigeLevelName( '(int32)ROOT.Var(parent_fame_lvl)' )]"
+#
+ #pious_parent_became_very_pious_desc: "My [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became [GetPietyLevelName(ROOT.Var('parent_piety_lvl').GetValue|0)]"
+ #pious_parent_became_very_pious_desc_second_perspective: "your [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became [GetPietyLevelName( ROOT.Var('parent_piety_lvl') )]"
+ #pious_parent_became_very_pious_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [pious_parent.GetMotherFather], [ pious_parent.GetFirstNameNoTooltip], became [GetPietyLevelName( ROOT.Var('parent_piety_lvl') )]"
+
+ famed_parent_became_very_famous_3_desc: "My [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_3$"
+ famed_parent_became_very_famous_3_desc_second_perspective: "your [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_3$"
+ famed_parent_became_very_famous_3_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [famed_parent.GetMotherFather], [ famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_3$"
+
+ famed_parent_became_very_famous_4_desc: "My [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_4$"
+ famed_parent_became_very_famous_4_desc_second_perspective: "your [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_4$"
+ famed_parent_became_very_famous_4_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [famed_parent.GetMotherFather], [ famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_4$"
+
+ famed_parent_became_very_famous_5_desc: "My [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_5$"
+ famed_parent_became_very_famous_5_desc_second_perspective: "your [famed_parent.GetMotherFather], [famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_5$"
+ famed_parent_became_very_famous_5_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [famed_parent.GetMotherFather], [ famed_parent.GetFirstNameNoTooltip], became $PRESTIGE_LEVEL_LABEL_5$"
+
+ pious_parent_became_very_pious_3_desc: "My [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_3$"
+ pious_parent_became_very_pious_3_desc_second_perspective: "your [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_3$"
+ pious_parent_became_very_pious_3_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [pious_parent.GetMotherFather], [ pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_3$"
+
+ pious_parent_became_very_pious_4_desc: "My [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_4$"
+ pious_parent_became_very_pious_4_desc_second_perspective: "your [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_4$"
+ pious_parent_became_very_pious_4_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [pious_parent.GetMotherFather], [ pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_4$"
+
+ pious_parent_became_very_pious_5_desc: "My [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_5$"
+ pious_parent_became_very_pious_5_desc_second_perspective: "your [pious_parent.GetMotherFather], [pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_5$"
+ pious_parent_became_very_pious_5_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] [pious_parent.GetMotherFather], [ pious_parent.GetFirstNameNoTooltip], became $PIETY_LEVEL_LABEL_5$"
+
+ bp2_yearly.4010.desc:1 "There are whispers about the tales and deeds of my [famous_parent.GetMotherFather], [ROOT.Char.Custom('ParentPrestigeLevelText')] [famous_parent.GetTitledFirstName], everywhere I go. Near or far, it seems there is nobody who has not heard [famous_parent.GetHerHis] name.\n\nI wonder, will I always stay in the shadow of my [famous_parent.GetMotherFather]? Or will I be able to achieve as much fame in my life as [famous_parent.GetHerHim]? How high will I be able to climb?"
+ bp2_yearly.4020.desc:0 "What joy it is to be a [ROOT.Char.Custom('GetDaughterSon')] of such an exemplary servant of [ROOT.Char.GetFaith.HighGodName]! The ardor I feel in my heart when I hear everybody refer to [pious_parent.GetHerHim] as [ROOT.Char.Custom('ParentPietyLevelText')] [pious_parent.GetTitledFirstName]! [pious_parent.GetHerHis|U] virtue is revered by [ROOT.Char.GetFaith.PriestNeuterPlural] and pious [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] alike.\n\nI wonder, will I humbly stay in my [pious_parent.GetMotherFather]'s shadow? Or will I achieve and surpass such piety in my own life? Will the good grace of [ROOT.Char.GetFaith.HighGodName] be as visible in me as it is in [pious_parent.GetHerHim]? "
+
+ hunt_melee_log_title:2 "[CHARACTER.GetInvolvedActivity.Custom('GetAnimalTypeKill')|U] Slain"
+
+ #Unop: Missing space after [vassal_faction_target.GetFullName]
+ hold_court.8260.desc.intro:1 "[vassal_faction_target.GetFullName] approaches sour-faced, impatient to deliver [vassal_faction_target.GetHerHis] appeal. \n\n"[ROOT.Char.GetTitleAsNameNoTooltip], my [vassal_faction_target.Custom2('RelationToMeShort', SCOPE.sC('vassal_faction_leader'))], [vassal_faction_leader.GetTitledFirstName], seeks to challenge my rightful position,"
+ #Was al-Muzaffar:0 "alMuzaffar-"
+ #al-Muzaffar:0 "al-Muzaffar"
+
+ ep2_locale_events.2510.a.tt:0 "#F Appeal to [befriend_target.GetFirstNamePossessiveNoTooltip] proud side.#!"
+ ep2_locale_events.2510.b.tt:0 "#F Appeal to [befriend_target.GetFirstNamePossessiveNoTooltip] warlike side.#!"
+ ep2_locale_events.2510.c.tt:0 "#F Appeal to [befriend_target.GetFirstNamePossessiveNoTooltip] gentle side.#!"
+
+ #Unop: Add \n at the end
+ activity_tournament_province_desc:2 "You hold a Tournament in [ROOT.Province.GetName]\nProvinces with suited buildings give out a [gold_i][gold|E] discount\n"
+ activity_tournament_province_hall_of_heroes_01_desc:2 "#P +++ $building_type_hall_of_heroes_01$#!\n"
+ activity_tournament_province_jousting_lists_01_desc:1 "#P ++ $building_type_jousting_lists_01$#!\n"
+ activity_tournament_province_blacksmiths_01_desc:1 "#P ++ $building_type_blacksmiths_01$#!\n"
+ activity_tournament_province_archery_ranges_01_desc:1 "#P ++ $building_type_archery_ranges_01$#!\n"
+ activity_tournament_province_royal_armory_01_desc:2 "#P ++ $building_type_royal_armory_01$#!\n"
+ activity_tournament_province_generic_university_desc:1 "#P ++ $building_type_generic_university$#!\n"
+ activity_tournament_province_war_camps_01_desc:2 "#P + $building_type_war_camps_01$#!\n"
+ activity_tournament_province_barracks_01_desc:2 "#P + $building_type_barracks_01$#!\n"
+ activity_tournament_province_regimental_grounds_01_desc:2 "#P + $building_type_regimental_grounds_01$#!\n"
+ activity_tournament_province_stables_01_desc:2 "#P + $building_type_stables_01$#!\n"
+ activity_tournament_province_military_camps_01_desc:1 "#P + $building_type_military_camps_01$#!\n"
+ activity_tournament_province_smiths_01_desc:1 "#P + $building_type_smiths_01$#!\n"
+ activity_tournament_province_desc_terrain_good:2 "#P + Suitable Terrain#!\n"
+ activity_tournament_province_desc_terrain_bad:2 "#N - Unsuitable Terrain#!\n"
+ activity_tournament_province_desc_terrain_verybad:2 "#N -- Mountainous Terrain#!\n"
+ activity_tournament_province_desc_terrain_terrible:2 "#N --- Waterlogged Terrain#!\n"
+ activity_tournament_province_desc_development_great:2 "#P +++ County Development#!\n"
+ activity_tournament_province_desc_development_good:2 "#P ++ County Development#!\n"
+ activity_tournament_province_desc_development_ok:2 "#P + County Development#!\n"
+ activity_tournament_province_desc_development_bad:2 "#N - County Development#!\n"
+
+ challenge_to_artifact_combat_interaction_victor_gets.tt:0 "The Victor will keep or gains [target.GetName]"
+ challenge_to_artifact_combat_interaction_loser_gets.tt:0 "The Loser will lose [target.GetName] and any claim on it"
+
+ bp1_house_feud.0500.a:0 "House [house_feud_rival.GetHouse.GetBaseNameNoTooltip] will regret this."
+
+ activity_pulse_action_guest_impressed_by_court_artifact:1 "[first.GetShortUINameNoTooltip] Impressed by [second.GetNameNoTooltip] [court_artifacts|E]"
+ bp2_yearly.6140.desc:0 "As sacred rites distract all minders, my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kin'))] [kin.GetFirstName] and the hostage [hostage.GetName] unleash their growing hatred.\n\n"My [kin.Custom2('RelationToMeShort', SCOPE.sC('root_scope'))] is the mightiest [ROOT.Char.GetTitleAsName] in all the land!" hisses [kin.GetFirstNameNoTooltip]. "One day, thanks to [ROOT.Char.GetHerHis], foul [home_court.GetPrimaryTitle.GetNameNoTier] will be ablaze, and your head will hang from a $knight_culture_player_no_tooltip_lowercase$'s saddle!"\n\n"I wish my [hostage.Custom2('RelationToMeShort', SCOPE.sC('home_court'))] would take me home," replies [hostage.GetFirstNameNoTooltip], "you'd be deathly afraid to insult me there!"\n\nWhen did my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kin'))] start speaking so? And to an honored guest!"
+
+ ACTIVITY_GUEST_COURTLY_REASON:0 "[ROOT.Char.GetSheHe|U] is a [GetVassalStance('courtly').GetTextIcon][GetVassalStance('courtly').GetName] [vassal|E]: $VALUE|=+0$"
+
+ fp1_other_decisions.0022.desc:0 "It would seem that the [unlucky_guest.GetFaith.GetAdherentNamePlural] of the world have not taken my sacrifice of their false-[unlucky_guest.GetFaith.ReligiousHeadName] particularly well.\n\n"
